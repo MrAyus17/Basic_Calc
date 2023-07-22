@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Basic Calculator</title>
+<script src="https://kit.fontawesome.com/b2d1444760.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <div class="title">
+    <h1>BASIC &nbsp; CALCULATOR &nbsp; <i class="fa-solid fa-calculator fa-sm"></i></h1>
+    </div>
+  </header>
+  <div class="container">
+    <div class="calc">
+    <form>
+    <div class="display">
+      <input type="text" name="display" >
+    </div>
+    <div>
+    <input type="button" class="edit" value="AC" onclick="display.value ='' ">
+    <input type="button" value="π" onclick="display.value +='3.1415926' ">
+    <input type="button" value="e" onclick="display.value +='2.7182818' ">
+    <input type="button" class="spl" value="÷" onclick="display.value +='/' ">
+    </div>
+    <div>
+    <input type="button" value="7" onclick="display.value +='7' ">
+    <input type="button" value="8" onclick="display.value +='8' ">
+    <input type="button" value="9" onclick="display.value +='9' ">
+    <input type="button" class="spl" value="×" onclick="display.value +='*' ">
+    </div>
+    <div>
+    <input type="button" value="4" onclick="display.value +='4' ">
+    <input type="button" value="5" onclick="display.value +='5' ">
+    <input type="button" value="6" onclick="display.value +='6' ">
+    <input type="button" class="spl" value="–" onclick="display.value +='-' ">
+    </div>
+    <div>
+    <input type="button" value="1" onclick="display.value +='1' ">
+    <input type="button" value="2" onclick="display.value +='2' ">
+    <input type="button" value="3" onclick="display.value +='3' ">
+    <input type="button" class="spl" value="+" onclick="display.value +='+' ">
+    </div>
+    <div>
+    <input type="button" value="0" onclick="display.value +='0' ">
+    <input type="button" value="." onclick="display.value +='.' ">
+    <input type="button" class="edit" value="DEL" onclick="display.value = display.value.toString().slice(0,-1)">
+    <input type="button" class="spl" value="=" onclick="display.value = eval(display.value)">
+    </div>
+    </form>
+    </div>
+  </div>
+  
+  <footer>
+    <h3>Thanks for visiting my website :) </h3>
+    <div>
+    <h3>Contacts :
+    &nbsp;
+    <a>
+    <i class="fa-brands fa-github fa-xl"></i>
+    </a>
+    &nbsp;
+    <a>
+    <i class="fa-brands fa-linkedin fa-xl"></i>
+    </a>
+    &nbsp;
+    <a>
+    <i class="fa-regular fa-envelope fa-xl"></i>
+    </a>
+    &nbsp;
+    <a>
+    <i class="fa-brands fa-youtube fa-xl"></i>
+    </a>
+    </h3>
+    </div>
+    </footer>
+    
+  <!--
+  Required Improvements :
+  1. Enable Cursor
+  2. Use π & e properly
+  3. Takes '.' only once and no 0 before a significant number
+  4. Multiplication of brackets without *
+  5. More operators : power, root, log, exponent, trig
+  -->
+</body>
+</html>
