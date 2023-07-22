@@ -2,32 +2,26 @@
   font-family: Georgia,'Times New Roman',Garamond,serif;
 }
 body{
-  background-color: wheat;
+  background-color: #25383C;
   margin: 0;
 }
 header{
   overflow: hidden;
-  background-color: #25383C;
   color: wheat;
-  padding: 10px 10vh;
+  padding: 10px 8vh;
   margin-bottom: 20px;
 }
 footer{
   overflow: hidden;
-  background-color: #25383C;
   color: wheat;
-  padding: 10px 10vh;
+  padding: 10px 8vh;
   margin-top: 20px;
-}
-
-  
 }
 .container{
   width: 100%;
   height: 100vh;
   display: flex;
 }
-
 .calc{
   width:340px;
   background-color: #36454F;
@@ -35,9 +29,8 @@ footer{
   border-radius: 10px;
   border-width: 5px;
   margin: auto;
-  box-shadow: -8px -8px 15px rgba(255,255,255,0.5), 5px 5px 15px rgba(0,0,0,0.5);
+  box-shadow: -8px -8px 15px rgba(255,255,255,0.3), 5px 5px 15px rgba(0,0,0,0.5);
 }
-
 .calc form input{
   border: 0px;
   outline: 0px;
@@ -76,9 +69,9 @@ form .display input{
 .calc form input.edit{
   color:#fc536d;
 }
-footer i{
-color:white
+footer a{
+color:wheat;
 }
 footer a:hover {
      background: #6a80a3;
-    }
+}
