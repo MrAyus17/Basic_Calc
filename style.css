@@ -1,77 +1,102 @@
-*{
-  font-family: Georgia,'Times New Roman',Garamond,serif;
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins&family=Tektur&display=swap");
+
+* {
+  font-family: sans-serif;
 }
-body{
-  background-color: #25383C;
+body {
+  background-color: #25383c;
   margin: 0;
 }
-header{
+header {
+  font-family: "Pacifico";
+  text-align: center;
   overflow: hidden;
   color: wheat;
-  padding: 10px 8vh;
-  margin-bottom: 20px;
+  padding: 5px 8vh;
+  margin: 20px;
 }
-footer{
+footer {
   overflow: hidden;
   color: wheat;
   padding: 10px 8vh;
   margin-top: 20px;
 }
-.container{
+.container {
   width: 100%;
-  height: 100vh;
+  height: auto;
   display: flex;
 }
-.calc{
-  width:340px;
-  background-color: #36454F;
+.calc {
+  width: 340px;
+  background-color: #36454f;
   padding: 20px;
   border-radius: 10px;
   border-width: 5px;
   margin: auto;
-  box-shadow: -8px -8px 15px rgba(255,255,255,0.3), 5px 5px 15px rgba(0,0,0,0.5);
+  box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.3),
+    5px 5px 15px rgba(0, 0, 0, 0.5);
 }
-.calc form input{
+.calc form input {
   border: 0px;
   outline: 0px;
   height: 60px;
   width: 60px;
-  border-radius: 10px;
-  box-shadow: -8px -8px 15px rgba(255,255,255,0.1), 5px 5px 15px rgba(0,0,0,0.2);
+  font-family: "Tektur";
+  border-radius: 9999px;
+  box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.2);
   font-size: 20px;
   cursor: pointer;
   color: whitesmoke;
   margin: 10px;
-  background-color:#25383C;
+  background-color: #16272a;
 }
 
-form .display{
+.calc form input:hover {
+  background-color: #36454f;
+}
+
+form .display {
   display: flex;
   justify-content: flex-end;
   margin: 20px 0;
 }
 
-form .display input{
+form .display input {
   text-align: right;
+  padding-left: 20px;
+  padding-right: 20px;
   flex: 1;
   font-size: 45px;
   box-shadow: none;
 }
 .calc form input:active {
-        box-shadow: inset 5px 5px 8px rgba(20, 66, 122, .5),
-            inset -5px -5px 8px #fff;
-        background: #6a80a3;
-    }
-.calc form input.spl{
-  color:#02e3c1;
+  box-shadow: inset 5px 5px 8px rgba(20, 66, 122, 0.5), inset -5px -5px 8px #fff;
+  background: #6a80a3;
+}
+.calc form input.spl {
+  color: #02e3c1;
   font-size: 150%;
 }
-.calc form input.edit{
-  color:#fc536d;
+.calc form input.edit {
+  color: #fc536d;
 }
-footer a{
-color:wheat;
+footer a {
+  color: wheat;
 }
-footer a:hover {
-     background: #6a80a3;
+
+.flex {
+  display: flex;
+}
+.space > :not([hidden]) ~ :not([hidden]) {
+  --space-reverse: 0;
+  margin-right: calc(1.73rem * var(--space-reverse));
+  margin-left: calc(1.73rem * calc(1 - var(--space-reverse)));
+}
+.scl-btn {
+  user-select: none;
+  font-size: 25px;
+}
+.scl-btn:hover {
+  color: gray;
 }
